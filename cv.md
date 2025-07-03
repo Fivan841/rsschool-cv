@@ -45,6 +45,16 @@ _Degree in Economics and Organization_
 
 ---
 
+## Code example
+
+```
+let arr = [10, 12, 15, 20, 23, 25, 30, 33, 35, 40, 42, 45, 50, 52, 55];
+let newArr = arr.filter(num => num % 5 === 0);
+console.log(newArr);
+```
+
+---
+
 ## Languages
 
 - English — B2
