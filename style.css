@@ -226,6 +226,11 @@ body {
   font-size: 48px;
 }
 
+.introduction__position {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .hero__right-side {
   display: flex;
   flex-direction: column;
@@ -386,7 +391,7 @@ body {
 .experience__list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .experience__item {
