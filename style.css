@@ -60,6 +60,7 @@ html {
 :root {
   --color-light: #ffffff;
   --color-dark: #000000;
+  --color-dark-alt: #212121;
   --color-accent-cold: #0575b4;
   --color-accent-cold-alt: #067c87;
   --color-accent-warm: #0d8500;
@@ -127,7 +128,11 @@ body {
 }
 
 .header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
   margin-top: 20px;
+  background-color: var(--color-light);
 }
 
 .header__inner {
@@ -217,6 +222,7 @@ body {
 .hero__about-me {
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 72px;
 }
 
 .hero__contacts__list {
@@ -347,6 +353,7 @@ body {
 }
 
 .information__experience {
+  scroll-margin-top: 72px;
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -377,6 +384,10 @@ body {
   color: var(--color-dark);
 }
 
+.skills {
+  scroll-margin-top: 72px;
+}
+
 .skills__list {
   display: flex;
   gap: 8px;
@@ -400,6 +411,10 @@ body {
   transform: scale(1.1);
 }
 
+.education {
+  scroll-margin-top: 72px;
+}
+
 .education__list {
   display: flex;
   flex-direction: column;
@@ -418,7 +433,46 @@ body {
   font-size: 22px;
 }
 
+.languages {
+  scroll-margin-top: 72px;
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+.languages__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.languages__item {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 18px 30px;
+  color: var(--color-light);
+  background-color: var(--color-dark-alt);
+  border-radius: var(--border-radius);
+  transition: transform 0.4s ease;
+}
+
+.languages__item:hover {
+  background-color: var(--color-accent-cold);
+  transform: scale(1.05);
+}
+
+.languages__name {
+  padding: 0;
+  line-height: 1;
+}
+
+.languages__level {
+  font-style: italic;
+  font-weight: 400;
+}
+
 .code {
+  scroll-margin-top: 72px;
   margin-bottom: 50px;
 }
 
@@ -437,4 +491,38 @@ body {
 .code__example code {
   padding: 0;
   margin: 0;
+}
+
+.footer {
+  margin-bottom: 15px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  column-gap: 70px;
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-duration) ease;
 }

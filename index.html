@@ -19,19 +19,22 @@
           />
           <ul class="header__menu">
             <li class="header__item">
-              <a href="#" class="header__link">About Me</a>
+              <a href="#about-me" class="header__link">About Me</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Skills</a>
+              <a href="#skills" class="header__link">Skills</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Experience</a>
+              <a href="#experience" class="header__link">Experience</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Education</a>
+              <a href="#education" class="header__link">Education</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Languages</a>
+              <a href="#languages" class="header__link">Languages</a>
+            </li>
+            <li class="header__item">
+              <a href="#code-example" class="header__link">Code Example</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +55,7 @@
           </div>
         </div>
         <div class="hero__right-side">
-          <div class="hero__about-me">
+          <div class="hero__about-me" id="about-me">
             <h2 class="hero__about-me__title section-title">About Me</h2>
             <p class="hero__about-me__text">
               My first experience with frontend development started while
@@ -182,15 +185,16 @@
                   </span>
                 </div>
                 <span class="hero__contacts__item-divider"></span>
-                <a href="https://github.com/fivan841" target="_blank"></a
-                >fivan841
+                <a href="https://github.com/fivan841" target="_blank"
+                  >fivan841</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section class="information container">
-        <div class="information__experience">
+        <div class="information__experience" id="experience">
           <h2 class="experience__title section-title">
             Professional Experience
           </h2>
@@ -209,7 +213,7 @@
           </ul>
         </div>
         <div class="information__right-side">
-          <div class="skills">
+          <div class="skills" id="skills">
             <h2 class="skills__title section-title">Skills</h2>
             <ul class="skills__list">
               <li class="skills__item first">HTML</li>
@@ -220,7 +224,7 @@
               <li class="skills__item second">Git</li>
             </ul>
           </div>
-          <div class="education">
+          <div class="education" id="education">
             <h2 class="education__title section-title">Education</h2>
             <ul class="education__list">
               <li class="education__item">
@@ -245,7 +249,20 @@
           </div>
         </div>
       </section>
-      <section class="code container">
+      <section class="languages container" id="languages">
+        <h2 class="languages__title section-title">Languages</h2>
+        <ul class="languages__list">
+          <li class="languages__item">
+            <h3 class="languages__name h3">English</h3>
+            <span class="languages__level">B2, Fluent</span>
+          </li>
+          <li class="languages__item">
+            <h3 class="languages__name h3">Russian</h3>
+            <span class="languages__level">C1, Native</span>
+          </li>
+        </ul>
+      </section>
+      <section class="code container" id="code-example">
         <h2 class="code__title section-title">Code example</h2>
         <pre class="code__example"><code>
 const SIZE = 200;
@@ -277,6 +294,97 @@ setInterval(onInterval, INTERVAL);</code>
         </pre>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer container">
+      <div class="footer__inner">
+        <img
+          src="img/my_logo.png"
+          alt="Frontend Guide Logo"
+          class="footer__logo"
+          width="84"
+          height="40"
+          loading="lazy"
+        />
+        <p class="footer__text">© 2025 CV</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              href="https://rs.school/courses/javascript-ru"
+              class="footer__link"
+            >
+              <img
+                src="img/rs-school-logo.svg"
+                alt="rs school logo"
+                height="38"
+              />
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="https://www.instagram.com/iwan_fliundro"
+              class="footer__link"
+            >
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_20_59)">
+                  <path
+                    d="M22.0002 25.8672C24.1315 25.8672 25.876 24.1312 25.876 21.9914C25.876 21.1492 25.601 20.3672 25.1455 19.7312C24.4409 18.7601 23.2979 18.1156 22.0088 18.1156C20.7198 18.1156 19.5768 18.7515 18.8721 19.7312C18.4166 20.3672 18.1416 21.1492 18.1416 21.9914C18.133 24.1312 19.869 25.8672 22.0002 25.8672Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M30.4562 17.2648V14.0164V13.5352H29.975L26.7266 13.5438L26.7437 17.2734L30.4562 17.2648Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M28.0156 22C28.0156 25.3172 25.3172 28.0156 22 28.0156C18.6828 28.0156 15.9844 25.3172 15.9844 22C15.9844 21.2008 16.1477 20.436 16.4313 19.7399H13.1484V28.7461C13.1484 29.9063 14.0938 30.8516 15.2539 30.8516H28.7461C29.9062 30.8516 30.8516 29.9063 30.8516 28.7461V19.7399H27.5688C27.8609 20.436 28.0156 21.2008 28.0156 22Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M22 0C9.84844 0 0 9.84844 0 22C0 34.1516 9.84844 44 22 44C34.1516 44 44 34.1516 44 22C44 9.84844 34.1516 0 22 0ZM33 19.7398V28.7461C33 31.0922 31.0922 33 28.7461 33H15.2539C12.9078 33 11 31.0922 11 28.7461V19.7398V15.2453C11 12.8992 12.9078 10.9914 15.2539 10.9914H28.7461C31.0922 10.9914 33 12.8992 33 15.2453V19.7398Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_59">
+                    <rect width="44" height="44" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="https://t.me/fivan841"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_20_65)">
+                  <path
+                    d="M22 0C17.649 0 13.3953 1.29027 9.77746 3.70766C6.15959 6.12504 3.33979 9.56097 1.67467 13.5809C0.0095412 17.6008 -0.426142 22.0245 0.422728 26.2919C1.2716 30.5596 3.36691 34.4795 6.44366 37.5564C9.52042 40.6331 13.4404 42.7284 17.7081 43.5773C21.9755 44.4262 26.3992 43.9903 30.4191 42.3252C34.4391 40.6601 37.8749 37.8405 40.2924 34.2226C42.7097 30.6047 44 26.3513 44 22C44 16.1652 41.682 10.5695 37.5565 6.44366C33.4307 2.31784 27.8347 0 22 0ZM32.8075 15.07L29.205 32.0925C28.93 33.3025 28.215 33.5775 27.1975 33.0275L21.6975 28.9575L18.9475 31.515C18.818 31.6841 18.6516 31.8216 18.461 31.917C18.2705 32.0122 18.0606 32.0628 17.8475 32.065L18.2325 26.565L28.4075 17.3525C28.875 16.9675 28.4075 16.7475 27.7475 17.1325L15.2625 24.97L9.7625 23.265C8.58 22.9075 8.5525 22.0825 10.01 21.5325L31.2125 13.2825C32.2575 12.98 33.1375 13.585 32.8075 15.07Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_65">
+                    <rect width="44" height="44" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
