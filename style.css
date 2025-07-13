@@ -244,6 +244,10 @@ body {
   scroll-margin-top: 72px;
 }
 
+.hero__contacts {
+  scroll-margin-top: 72px;
+}
+
 .hero__contacts__list {
   display: flex;
   justify-content: space-between;
