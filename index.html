@@ -282,11 +282,11 @@ const onInterval = () => {
   logo.style.left = `${x}px`;
   logo.style.top = `${y}px`;
 
-  if (y >= window.innerHeight - SIZE || y <= 0) {
+  if (y >= window.innerHeight - SIZE || y &lt;= 0) {
     stepY = -stepY;
   }
 
-  if (x >= window.innerWidth - SIZE || x <= 0) {
+  if (x >= window.innerWidth - SIZE || x &lt;= 0) {
     stepX = -stepX;
   }
 };
